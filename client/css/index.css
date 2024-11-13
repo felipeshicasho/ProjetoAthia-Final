@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav__main {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.img__aside {
+  height: 30px;
+}
+
+.img__aside:hover {
+  cursor: pointer;
+}
+
+.img__sigame {
+  height: 90px;
+}
+
+.nav__img {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.li__principal {
+  border: 1px solid black;
+  padding: 28px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+}
+
+.li__principal ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease; /* Animação suave */
+  padding: 0 10px;
+}
+
+.li__principal::after {
+  content: "▼ ";
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.li__principal.active ul {
+  max-height: 400px; /* Defina um valor grande o suficiente para conter o conteúdo */
+}
+
+.li__principal.active::after {
+  content: "▲";
+}
+
+.li__link {
+  margin: 15px 0px;
+}
+
+.li__button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.li__icon {
+  height: 40px;
+}
+
+.li__icon__button {
+  height: 20px;
+  margin: 4px;
+}
+
+.li__menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.forms__section {
+  display: flex;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 25px;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.forms__input {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.form__button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+}
+
+.form__button:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.form__text {
+  width: 250px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.update__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+.update__th__td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.update__th__td__remove{
+  padding: 12px;
+  border: 1px solid #ddd;
+  width: 20px;
+}
+
+.update__th__td__update{
+  padding: 12px;
+  border: 1px solid #ddd;
+  width: 20px;
+}
+
+.update__th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.update__th:nth-child(even) {
+  background-color: #f9f9f9;
+}
