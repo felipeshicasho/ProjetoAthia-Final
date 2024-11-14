@@ -127,7 +127,7 @@ require "../../data/funcoesBD.php";
         </aside>
         <section>
             <section class="forms__input">
-                <h1>Visualizar Empresas: </h1>
+                <h1>Editar Empresas: </h1>
 
                 <?php
                 $listaEmpresa = retornarEmpresa();
