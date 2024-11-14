@@ -95,13 +95,13 @@ ALTER TABLE `setor`
 -- AUTO_INCREMENT de tabela `empresa`
 --
 ALTER TABLE `empresa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT de tabela `setor`
 --
 ALTER TABLE `setor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- Restrições para tabelas despejadas
