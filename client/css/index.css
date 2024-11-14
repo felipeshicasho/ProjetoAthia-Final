@@ -1,9 +1,11 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Navegação Principal */
 .nav__main {
   padding: 10px 30px;
   display: flex;
@@ -12,6 +14,13 @@
   border: 1px solid black;
 }
 
+.nav__img {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Imagens */
 .img__aside {
   height: 30px;
 }
@@ -24,12 +33,7 @@
   height: 90px;
 }
 
-.nav__img {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
+/* Estrutura Principal */
 main {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -40,6 +44,7 @@ ul {
   padding: 0;
 }
 
+/* Lista Principal */
 .li__principal {
   border: 1px solid black;
   padding: 28px 20px;
@@ -64,17 +69,19 @@ ul {
 }
 
 .li__principal.active ul {
-  max-height: 400px; /* Defina um valor grande o suficiente para conter o conteúdo */
+  max-height: 400px; /* Altura para conteúdo expandido */
 }
 
 .li__principal.active::after {
   content: "▲";
 }
 
+/* Links da Lista */
 .li__link {
-  margin: 15px 0px;
+  margin: 15px 0;
 }
 
+/* Botões e Ícones */
 .li__button {
   display: flex;
   align-items: center;
@@ -91,12 +98,14 @@ ul {
   margin: 4px;
 }
 
+/* Menu */
 .li__menu {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
+/* Seção de Formulários */
 .forms__section {
   display: flex;
   width: 500px;
@@ -115,6 +124,7 @@ ul {
   gap: 10px;
 }
 
+/* Botão do Formulário */
 .form__button {
   padding: 10px 20px;
   border-radius: 20px;
@@ -127,12 +137,14 @@ ul {
   cursor: pointer;
 }
 
+/* Campo de Texto do Formulário */
 .form__text {
   width: 250px;
   padding: 10px;
   border-radius: 20px;
 }
 
+/* Tabela de Atualização */
 .update__table {
   width: 100%;
   border-collapse: collapse;
@@ -140,20 +152,16 @@ ul {
   font-size: 16px;
   text-align: left;
 }
-.update__th__td {
+
+.update__th__td,
+.update__th__td__remove,
+.update__th__td__update {
   padding: 12px;
   border: 1px solid #ddd;
 }
 
-.update__th__td__remove{
-  padding: 12px;
-  border: 1px solid #ddd;
-  width: 20px;
-}
-
-.update__th__td__update{
-  padding: 12px;
-  border: 1px solid #ddd;
+.update__th__td__remove,
+.update__th__td__update {
   width: 20px;
 }
 
@@ -161,6 +169,7 @@ ul {
   background-color: #f2f2f2;
   font-weight: bold;
 }
+
 .update__th:nth-child(even) {
   background-color: #f9f9f9;
 }
